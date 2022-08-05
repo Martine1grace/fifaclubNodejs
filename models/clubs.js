@@ -14,13 +14,15 @@ minlength: 3
 },
 
 numberOfplayers:{
-
 type : Number,
-
 trim: true,
-
 minlength: 3
 
+},
+owner:{
+    type:Schema.Types.ObjectId,
+    required:true,
+    ref:'Players'
 }
 
 })
